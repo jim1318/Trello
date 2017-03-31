@@ -1,0 +1,23 @@
+<div class="list_header list_handle">
+  <div class="list_name_holder">
+    <h1>{{list.name}}</h1>
+    <textarea>{{list.name}}</textarea>
+  </div>
+  <a href="#" class="list_actions">***</a>
+  {{#if subscribed}}
+    <div class="list_subscribed"></div>
+  {{/if}}
+</div>
+
+<ul list_id="{{list.id}}" class="list_card_holder"></ul>
+<a href="#" class="add_card">Add a card...</a>
+
+<div class="card_composer">
+  <textarea placeholder="New Card Name"></textarea>
+  <div class="button_holder">
+    <a href="#" id="add_new_card" class="button green_button">Submit</a>
+    <a href="#" class="button close_button">X</a>
+  </div>
+</div>
+
+

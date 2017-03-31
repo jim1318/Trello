@@ -1,0 +1,245 @@
+@import "whitespace-reset.css"
+@import "labels.css"
+@import "mixins"
+@import "backgrounds"
+@import "list"
+@import "card_summary"
+@import "popups"
+@import "card_detail"
+
+//HIGH LEVEL (SHARED)-------------------------------------------------------------------------------
+body
+  background: colors.bg
+  font: normal 14px Helvetica Neue, Arial, Helvetica, sans-serif
+  border-radius: 3px
+a
+  text-decoration: none
+
+//FOR DRAG & DROP
+.handle
+  cursor: move;
+.list
+  cursor: move;
+  
+textarea
+  border: 1px solid #e2e4e6  
+  border-radius: 3px
+  resize: none
+  box-sizing: border-box
+  width: 90%
+  margin: 5px 0 5px 0
+  padding: 5px
+
+//BUTTONS USED ALL OVER---------------------------------------------
+div.button_holder
+    margin: 10px 0 0 0
+    padding: 0 0 0 0
+    height: 30px
+    border: none
+    
+a.button
+  display: inline-block
+  height: 30px
+  line-height: 22px
+  margin: 0 5px 0 0
+  padding: 4px 20px 4px 20px
+  font-weight: 700
+  text-align: center
+  cursor: pointer
+  border: none
+  border-radius: 3px
+  box-sizing: border-box
+  vertical-align: bottom
+
+a.green_button
+  color: #ffffff
+  background: linear-gradient(to bottom, #61BD4F 0, #5AAC44 100%)
+  box-shadow: 0 1px 0 #3F6F21
+  &:hover
+    background: linear-gradient(to bottom,#5AAC44 0,#519839 100%)
+
+a.grey_button
+  color: #b45b4a
+  background: #d3d7d9 
+  box-shadow: 0 1px 0 #3F6F21
+  &:hover
+    color: #ffffff
+    background: #b45b4a
+
+a.close_button
+  color: #999999
+  font-size: 22px
+  line-height: 22px
+  padding: 4px 20px 4px 20px
+  &:hover
+    color: #4d4d4d
+
+a.close
+  height: 25px
+  width: 25px
+  padding: 10px  
+  //display: block
+  position: absolute
+  font-size: 25px
+  top: 0px
+  right: 0px
+  color: #999
+  font-weight: 600px
+  &:hover
+    color: #111;
+  &:before
+    content: "\0058"
+    text-align: center
+    vertical-align: middle
+
+// LAYOUT HEADER----------------------------------------------------------------------------
+HEADER  
+  padding: 5px
+  height: 30px
+  background: colors.header_dark;
+  h1
+    display: block
+    margin: 0 auto
+    text-align: center
+    color: white
+    font-size: 20px
+    font-weight: bold
+    margin-left: -210px
+
+#search
+  border-radius: 6px
+  width: 200px
+  float: left
+  padding: 5px
+  background: colors.header_light
+
+
+//BOARD------------------------------
+//- SOURCE FOR UTF ICONS:  https://www.utf8icons.com/subsets/miscellaneous-symbols
+#board
+  padding: 5px
+  position: relative
+  height: 100vh
+  clear_float()
+
+  //ADD LIST TO BOARD----------------------------------------------------------
+  .board_view_add_list
+    float: left
+    margin: 10px 0 10px 10px
+    padding: 10px
+    border-radius: 3px
+    width: 270px
+    a
+      color: rgba(255,255,255,.7)
+      margin-bottom: 5px
+    #add_list_section
+      display: none
+
+  //DISPLAY BOARD INFO BAR---------------
+  #board_info
+    height: 30px
+    padding: 8px
+    clear_float()
+    #update_board_name
+    h1
+      float: left
+      padding: 0 8px 0 6px
+      line-height: 30px
+      font-weight: 700
+      font-size: 18px
+      color: #f6f6f6
+    a
+      height: 30px
+      float: right
+      color: #f6f6f6
+      padding: 0 8px 0 0
+      line-height: 30px
+      span
+        font-size: 9pt
+        vertical-align: middle
+        &:first-of-type
+          margin-right: 5px
+          &:before
+            content: "\2630"
+        &:nth-of-type(2)
+          text-decoration: underline       
+  #board_view_ul
+    min-width: 1000px
+    clear_float()
+ 
+//MENU-------------------------------------------------------------------------------------
+#menu
+  position: absolute
+  display: none
+  width: 305px
+  height: 100%
+  background: #fff
+  top: 0
+  bottom: 0
+  right: 0
+  padding: 8px
+  background: #edeff0
+  #menu_title, #menu #menu_items      
+    border-bottom: 1px solid #d6dadc
+  #menu_title
+  #menu_items
+    a
+      color: #444
+      display: block
+      font-size: 14px
+      font-weight: bold
+      line-height: 20px
+      padding: 6px 6px 6px 38px
+  h1
+    line-height: 20px
+    font-size: 16px
+    margin: 13px 30px 9pt
+    color: #4d4d4d
+    font-weight: bold
+    display: block
+    text-align: center
+  #menu_activity
+    h2
+      line-height: 20px
+      font-weight: 700
+      display: block
+      padding: 10px
+      font-size: 20px
+      margin: 10px auto 0 auto
+      text-align: center
+      border-bottom: 1px solid grey
+      &:hover
+        cursor: pointer
+        background: #D6DADC
+        border-radius: 3px
+    ul
+      padding: 5px
+
+//LABEL ADD-------------------------------------
+ul.color_holder
+  clear_float()
+
+
+// ACTIVITIES - ACTIONS & COMMENTS----------------------------------------------------------
+//------------------------------------------------------------------------------------------
+li.action, li.comment
+  padding: 5px 10px 5px 10px
+  border-radius: 3px
+  font-size: 14px
+  max-width: 350px
+  border-bottom: 1px solid #e2e4e6
+  a.action, p.action, a.comment, p.comment
+    display: inline-block
+  a.action, a.comment
+    text-decoration: underline
+  p.comment_text
+    font-size: 14px
+    color: #4d4d4d
+    border-radius: 6px
+    background: #ffffff
+    padding: 10px
+    margin: 3px auto 3px auto
+  span.action, span.comment
+    padding-top: 5px
+    font-size: 10px
+    display: block

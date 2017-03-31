@@ -1,0 +1,24 @@
+<a href="#" class="close_pop">X</a>
+<h1 class="pop">Copy Card</h1>
+
+<h2>Title</h2>
+<textarea id="copy_card_name">{{card.name}}</textarea>
+
+<h2>Keep...</h2>
+{{#if num_labels}}
+  <input type="checkbox" name="labels" value="labels" checked /> Labels ({{num_labels}})
+{{/if}}
+{{#if num_comments}}
+  <input type="checkbox" name="comments" value="comments" checked /> Comments ({{num_comments}})
+{{/if}}
+
+<h2>Copy to...</h2>
+<select name="list" id="list">
+  {{#each lists}}
+    <option value="{{this.id}}">{{this.name}}</option>
+  {{/each}}
+</select>
+
+<div class="button_holder">
+  <a href="#" id="copy_card" class="button green_button">Copy Card</a>
+</div>

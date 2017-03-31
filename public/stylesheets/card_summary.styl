@@ -1,0 +1,73 @@
+//DISPLAY INDIVIDUAL CARD ON LIST--------------------------------------------------------
+.card_summary
+  width: 240px
+  margin: 10px auto 8px auto
+  padding: 6px 5px 0px 5px
+  border-radius: 3px
+  background: colors.card_bg
+  min-height: 70px
+  overflow: auto
+  &:hover
+    cursor: pointer
+  h1
+    margin-top: 8px
+  ul.label_summary_list
+    clear_float()
+    margin: 0px auto 5px auto
+    li div
+      width: 42px
+      height: 8px
+      margin: 4px 4px 0 0 
+      float: left
+      border-radius: 3px
+  ul.icon_holder
+    margin: 8px 0 5px 0
+    clear_float()
+    display: block
+    li
+      display: inline-block
+      float: left
+      min-width: 20px
+      margin: 0 8px 0 0 
+      padding: 0 0 0 0
+      height: 20px
+      &:before
+        position: relative
+        left: 2px
+      span
+        min-width: 10px
+        padding: 0 5px 0 5px
+
+
+//CARD SUMMARY VIEW WHILE DRAGGING & DROPPING
+.drag_card
+  background: grey
+.ghost_card
+  background: grey
+
+//ICONS USED IN SUMMARY CARD VIEW-------------------------------
+.icon_subscriber
+  &:before
+    content: "\1F441"
+    color: #ababab
+.icon_late_date
+  background: #EC9488
+  border-radius: 3px
+  color: #ffffff
+  &:before
+    content: "\23F0"
+    color: white
+.icon_early_date
+  &:before
+    content: "\23F2"
+    color: #ababab
+.icon_description
+  &:before
+    content: "\2712"
+    color: #ababab
+.icon_comments
+  &:before
+    content: "\1F5EA"
+    color: #ababab
+
+  

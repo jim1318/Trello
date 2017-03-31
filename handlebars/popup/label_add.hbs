@@ -1,0 +1,26 @@
+<a href="#" class="close_pop">X</a>
+<a href='#' class="go_back">&#60</a>
+
+<h1 class="pop">Add Label</h1>
+
+<h2>Name</h2>
+<textarea></textarea>
+
+
+<h2>Select a Color</h2>
+<ul class="color_holder">
+  {{#each colors}}
+    <li>
+      <a color="{{this.color}}" href="#" {{#if this.selected}}
+                    class="color_edit {{this.css_color}} selected_color"
+                  {{else}}
+                    class="color_edit {{this.css_color}}"
+                  {{/if}}
+      ></a>
+    </li>
+  {{/each}}
+</ul>
+
+<div class="button_holder">
+  <a href="#" class="button green_button add_label">Create</a>
+</div>

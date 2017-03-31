@@ -1,0 +1,30 @@
+{
+  "nextLabelId": 1,
+  "labels": [
+    {
+      "id": "1",
+      "name": "Label 1",
+      "class": "dark_green"
+    },
+    {
+      "id": "2",
+      "name": "Label 2",
+      "class": "dark_blue"
+    },
+    {
+      "id": "3",
+      "name": "Label 3",
+      "class": "yellow"
+    },
+    {
+      "id": "4",
+      "name": "Label 4",
+      "class": "orange"
+    },
+        {
+      "id": "5",
+      "name": "Label 5",
+      "class": "dark_green"
+    }
+  ]
+}

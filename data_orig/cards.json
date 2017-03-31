@@ -1,0 +1,45 @@
+{
+  "nextCardId": 5,
+  "cards": [
+    {
+      "id": "1",
+      "parent_id": "1",
+      "name": "Test Card 1",
+      "description": "Test Card 1 Description",
+      "due_date": "2019-03-17 12:49",
+      "labels": "[1, 2, 3]",
+      "subscribed": "true",
+      "archived": "false"
+    },
+    {
+      "id": "2",
+      "parent_id": "1",
+      "name": "Test Card 2",
+      "description": "Test Card 2 Description",
+      "due_date": "2017-03-17 3:48",
+      "labels": "[2, 3, 4]",
+      "subscribed": "false",
+      "archived": "false"
+    },
+    {
+      "id": "3",
+      "parent_id": "1",
+      "name": "Test Card 3",
+      "description": "Test Card 3 Description",
+      "due_date": "2017-03-17 03:48",
+      "labels": "[1, 5]",
+      "subscribed": "false",
+      "archived": "false"
+    },
+    {
+      "id": "4",
+      "parent_id": "1",
+      "name": "Test Card 4",
+      "description": "Test Card 4 Description",
+      "due_date": "2017-03-17 03:48",
+      "labels": "[2, 4]",
+      "subscribed": "false",
+      "archived": "false"
+    }
+  ]
+}

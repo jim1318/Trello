@@ -1,0 +1,65 @@
+{
+  "nextCommentId": 7,
+  "comments": [
+    {
+      "id": "1",
+      "parent_id": "1",
+      "author": "Jim",
+      "text": "This is some sample text - 1",
+      "timestamp": "2015-03-17T03:48:03.037Z",
+      "type": "comment",
+      "edited": "false",
+      "subscribers": "true"
+    },
+    {
+      "id": "2",
+      "parent_id": "1",
+      "author": "Jim",
+      "text": "This is some sample text - 2",
+      "timestamp": "2010-03-17T03:48:03.037Z",
+      "type": "comment",
+      "edited": "true",
+      "subscribers": "true"
+    },
+    {
+      "id": "3",
+      "parent_id": "1",
+      "author": "Jim",
+      "text": "This is some sample text - 3",
+      "timestamp": "1900-03-17T03:48:03.037Z",
+      "type": "comment",
+      "edited": "false",
+      "subscribers": "false"
+    },
+    {
+      "id": "4",
+      "parent_id": "2",
+      "author": "Jim",
+      "text": "This is some sample text - 4",
+      "timestamp": "2017-03-17T03:48:03.037Z",
+      "type": "comment",
+      "edited": "false",
+      "subscribers": "false"
+    },
+    {
+      "id": "5",
+      "parent_id": "2",
+      "author": "Jim",
+      "text": "Comment Text # 5",
+      "timestamp": "2017-03-17T03:48:03.037Z",
+      "type": "comment",
+      "edited": "false",
+      "subscribers": "false"
+    },
+    {
+      "id": "6",
+      "parent_id": "3",
+      "author": "Jim",
+      "text": "Comment Text # 6",
+      "timestamp": "2017-03-17T03:48:03.037Z",
+      "type": "comment",
+      "edited": "false",
+      "subscribers": "true"
+    }
+  ]
+}

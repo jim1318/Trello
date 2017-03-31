@@ -1,0 +1,12 @@
+<a href="#" class="close_pop">X</a>
+<h1 class="pop">Move All Cards</h1>
+
+<select name="list" id="list">
+  {{#each lists}}
+    <option value="{{this.id}}">{{this.name}}</option>
+  {{/each}}
+</select>
+
+<div class="button_holder">
+  <a href="#" id="move_all_cards" class="button green_button">Move All Cards</a>
+</div>

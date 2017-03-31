@@ -1,0 +1,6 @@
+{ "name": "Jims's Test Board",
+  "listOrder": "",
+  "blind_toggle": "false",
+  "colors": ["dark_green", "yellow", "orange", "red", "purple", "dark_blue", "light_blue", "light_green", "pink", "grey", "none"],
+  "background": "dark_blue_bg"
+}

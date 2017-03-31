@@ -1,0 +1,29 @@
+<h1>{{card.name}}</h1>
+<ul class="icon_holder">
+  
+  {{#if subscribed}}
+    <li class="icon_subscriber"></li>
+  {{/if}}
+
+  {{#if card.due_date}}
+    {{#if late}}
+      <li class="icon_late_date">
+    {{else}}
+      <li class="icon_early_date">
+    {{/if}}
+        <span>{{month}} {{day}} {{year}}</span>
+      </li>
+  {{/if}}
+
+  {{#if card.description}}
+    <li class="icon_description"></li>
+  {{/if}}
+
+  {{#if comments}}
+    <li class="icon_comments">
+      <span>{{comments}}</span>
+    </li>
+  {{/if}}
+  
+</ul>
+

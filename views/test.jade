@@ -1,0 +1,37 @@
+include /_mixins
+doctype html
+html
+  head
+    title= "TEST PAGE"
+    //- Load CSS Files
+    +stylesheet_link_tag('style')
+    //-Vendor JS Files (combined into one)
+    +javascript_include_tag('vendor/all')
+    //-Handelbars Templates
+    +javascript_include_tag('handlebars_templates') 
+  body
+    #test
+      .test_container
+        .label.dark_green
+        .label.yellow
+        .label.orange
+        .label.red
+        .label.purple
+        .label.dark_blue
+        .label.light_blue
+        .label.light_green
+        .label.pink
+        .label.grey
+        .label.none
+
+      .test_container
+        .label.dark_green.blind
+        .label.yellow.blind
+        .label.orange.blind
+        .label.red.blind
+        .label.purple.blind          
+        .label.dark_blue.blind
+        .label.light_blue.blind
+        .label.light_green.blind
+        .label.pink.blind          
+        .label.grey.blind          

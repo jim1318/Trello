@@ -1,0 +1,83 @@
+.dark_green {
+  background: #61bd4f;
+}
+.dark_green.blind {
+  background-image: linear-gradient(to bottom left, rgba(255,255,255,0.5) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.5) 75%, transparent 75%, transparent);
+  background-size: 1pc 1pc;
+}
+
+.yellow {
+  background: #F2D600;
+}
+.yellow.blind {
+  background-image: linear-gradient(135deg,rgba(255,255,255,.5) 25%,transparent 25%),linear-gradient(225deg,rgba(255,255,255,.5) 25%,transparent 25%),linear-gradient(315deg,rgba(255,255,255,.5) 25%,transparent 25%),linear-gradient(45deg,rgba(255,255,255,.5) 25%,transparent 25%);
+  background-size: 9pt 9pt;
+}
+
+.orange {
+  background: #FFAB4A;
+}
+.orange.blind {
+  background-image: linear-gradient(to right,rgba(255,255,255,.5) 50%,transparent 50%,transparent);
+  background-size: 8px 8px;
+}
+
+.red {
+  background: #EB5A46;
+}
+.red.blind {
+  background-image: linear-gradient(135deg,rgba(255,255,255,.5) 25%,transparent 25%),linear-gradient(225deg,rgba(255,255,255,.5) 25%,transparent 25%),linear-gradient(315deg,rgba(255,255,255,.5) 25%,transparent 25%),linear-gradient(45deg,rgba(255,255,255,.5) 25%,transparent 25%);
+  background-size:  9pt 9pt
+}
+
+.purple {
+  background: #C377E0;
+}
+.purple.blind {
+  background-image: linear-gradient(to bottom right,rgba(255,255,255,.5) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.5) 50%,rgba(255,255,255,.5) 75%,transparent 75%,transparent);
+  background-size: 1pc 1pc
+}
+
+.dark_blue {
+  background: #0079BF;
+}
+.dark_blue.blind {
+  background-image: linear-gradient(to right,rgba(255,255,255,.5) 50%,transparent 50%,transparent);
+  background-size: 8px 8px;
+}
+
+.light_blue {
+  background: #00C2E0;
+}
+.light_blue.blind {
+  background-image: linear-gradient(135deg,rgba(255,255,255,.5) 25%,transparent 25%),linear-gradient(225deg,rgba(255,255,255,.5) 25%,transparent 25%),linear-gradient(315deg,rgba(255,255,255,.5) 25%,transparent 25%),linear-gradient(45deg,rgba(255,255,255,.5) 25%,transparent 25%);
+  background-size: 9pt 9pt;
+}
+
+.light_green {
+  background: #51E898;
+}
+.light_green.blind {
+  background-image: linear-gradient(to bottom right,rgba(255,255,255,.5) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.5) 50%,rgba(255,255,255,.5) 75%,transparent 75%,transparent);
+  background-size:  1pc 1pc
+}
+
+.pink {
+  background: #FF80CE;
+}
+.pink.blind {
+  background-image: linear-gradient(to bottom left,rgba(255,255,255,.5) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.5) 50%,rgba(255,255,255,.5) 75%,transparent 75%,transparent);
+  background-size:  1pc 1pc
+}
+
+.grey {
+  background: #4d4d4d;
+}
+.grey.blind {
+  background-image:linear-gradient(to right,rgba(255,255,255,.5) 50%,transparent 50%,transparent);
+  background-size: 8px
+}
+
+.none {
+  background: #B6BBBF;
+}

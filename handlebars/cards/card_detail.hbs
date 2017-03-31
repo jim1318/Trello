@@ -1,0 +1,99 @@
+<div class="card_detail">
+  <a href="#" class="close"></a>
+  
+  <!-- CARD DETAIL HEADER -->
+  <div class="card_detail_header">
+    <h1>{{card.name}}</h1>
+    <p>In list &nbsp</p><a listId="{{list.id}}" href="#">{{list.name}}</a>
+    {{#if subscribed}}
+      <div class="icon_subscriber"></div>
+    {{/if}}
+  </div>
+  
+  <!-- CARD DETAIL MAIN CONTENT -->
+  <div class="card_detail_main">
+
+    <!-- CARD DETAIL LABELS -->
+    <div class="card_d_labels">
+      {{#if card.labels}}
+        <h3>Labels:</h3>
+      {{/if}}
+    </div>
+
+    <div class="card_d_date">
+      {{#if card.due_date}}
+        <h3>Due Date</h3>
+        <div class="date_holder">
+          {{#if card.due_date}}
+            {{#if late}}
+              <a href="#" class="icon_late_date show_date_edit">
+            {{else}}
+              <a href="#" class="icon_early_date show_date_edit">
+            {{/if}}
+                <span class="date_span">{{month}} {{day}} {{year}} at {{hours}}:{{minutes}}</span>
+              </a>
+            {{/if}}
+        </div>
+      {{/if}}
+    </div>
+
+    <div class="card_d_descr">
+      <a href='#' class="edit_descr">Edit the Description</a>
+      <p>{{card.description}}</p>
+      <div class="descr_edit">
+        <textarea>{{card.description}}</textarea>
+        <div class="button_holder">
+          <a href="#" class="button green_button">Save</a>
+          <a href="#" class="button close_button">X</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card_d_comm">
+      <h2>Add Comment</h2>
+      <textarea></textarea>
+      <div class="button_holder">
+        <a href="#" id="send_comment" class="button green_button">Send Comment</a>
+      </div>
+    </div>
+    
+    <div class="card_d_activ">
+      <div class="card_activity">
+        <h2>Activity</h2>
+        <ul id="card_activities"></ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CARD DETAIL SIDEBAR -->
+  <div class="card_detail_sidebar">
+    <h2>Add</h2>
+    <ul>
+      <li><a href="#" id="a_labels" class="card_detail_button">Labels</a></li>
+      <li><a href="#" id="a_due_date" class="card_detail_button">Due Date</a></li>
+    </ul>
+    <h2>Actions</h2>
+    <ul>
+      <li><a href="#" id="a_move" class="card_detail_button">Move</a></li>
+      <li><a href="#" id="a_copy" class="card_detail_button">Copy</a></li>
+      <li>
+        <a href="#" id="a_subscribe" class="card_detail_button">
+          Subscribe
+          {{#if subscribed}}
+            <span class="green_check"></span>
+          {{/if}}
+        </a>
+      </li>
+      <li>
+        <a href="#" id="a_archive" class="card_detail_button">
+        Archive
+        {{#if archived}}
+          <span class="green_check"></span>
+        {{/if}}
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</div>

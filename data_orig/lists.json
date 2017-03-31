@@ -1,0 +1,19 @@
+{ 
+  "nextListId": 3,
+  "lists": [
+    {
+      "id": "1",
+      "name": "Test List 1",
+      "subscribed": "true",
+      "cardOrder": "",
+      "archived": "false"
+    },
+    {
+      "id": "2",
+      "name": "Test List 2",
+      "subscribed": "false",
+      "cardOrder": "",
+      "archived": "false"
+    }
+  ]
+}

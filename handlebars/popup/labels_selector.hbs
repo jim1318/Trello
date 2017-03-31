@@ -1,0 +1,23 @@
+<a href="#" class="close_pop">X</a>
+
+<h1 class="pop">Labels</h1>
+
+<div class="label_search">SEARCH</div>
+<ul class="selector_list">
+
+  {{#each labels}}
+    <li class="label_select_view">
+      <div class="toggle_label">
+        <div label_id="{{this.id}}" class="{{this.class}} before {{../blind}}"></div>
+        <div label_id="{{this.id}}" class="{{this.class}} after {{../blind}}">
+          <span>{{this.name}}</span>
+        </div>
+      </div>
+      <a href="#" label_id="{{this.id}}" class="edit_label"></a>    
+    </li>
+  {{/each}}
+</ul>
+
+<a href="#" id="create_new_label" class="boring_link">Create a new label</a>
+<a href="#" id="toggle_blind" class="boring_link">Toggle Color Blind Mode</a>
+

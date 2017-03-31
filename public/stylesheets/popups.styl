@@ -1,0 +1,221 @@
+//SHARED POPOUT
+#popup
+  position: absolute
+  margin: 0px
+  padding: 5px 10px 5px 10px
+  width: 300px
+  min-height: 500px
+  background: white
+  z-index: 5 
+  border-radius: 3px
+  border: 1px solid #D6DADC
+  color: #8c8c8c
+  select
+    height: 40px
+    width: 160px
+    margin-bottom: 5px
+    border-radius: 3px
+  h2
+    margin-bottom: 5px
+  input
+    margin-bottom: 8px
+  a.close_pop
+    position: absolute
+    float: right
+    padding: 10px
+    margin: 0px
+    top: 0px
+    right: 0px
+    text-decoration: none
+    line-height: 20px
+    font-size: 20px
+    font-weight: 600px
+    text-align: center
+    color: #8c8c8c
+    &:hover
+      color: #111;
+  a.go_back
+    position: absolute
+    float: left
+    padding: 10px
+    top: -5px
+    left: 5px
+    margin: 0px
+    text-decoration: none
+    line-height: 20px
+    font-size: 20px
+    font-weight: 600px
+    text-align: center
+    color: #8c8c8c
+    &:hover
+      color: #111;
+  h1.pop
+    font-size: 16px
+    color: #8c8c8c
+    margin: 0 0 10px 0
+    padding: 15px 0 0 0 
+    display: block
+    text-align: center
+    border-bottom: 1px solid #D6DADC
+    padding-bottom: 5px
+ 
+//LIST COMMANDS POPUP-------------------------------------------------------
+.list_edit
+  //top: 35px
+  //right: -250px
+  float: left 
+  a.command_link
+    display: block
+    color: #444444
+    font-size: 14px
+    line-height: 18px
+    font-weight: 700
+    padding: 6px 10px
+    margin: 0
+    text-decoration: none
+    //ICON CHECK
+    span
+      margin-left: 5px    
+      color: #444444   
+      &:before
+        content: "\2714"
+        position: relative
+        right: 0px
+        top: 0px
+    &:hover
+      color: #ffffff
+      background: #298FCA
+      span
+        color: #ffffff 
+
+//LABEL SELECTOR POPOUT--------------------------------------------
+.label_selector
+  top: 90px
+  left: 10px
+  div.label_search
+    border: 1px solid #D6DADC
+    border-radius: 3px
+    background: #E2E4E6
+    height: 40px
+    display: block
+    margin: 10px 5px 10px 5px
+  ul.selector_list
+    padding: 5px
+    li.label_select_view
+      display: block
+      vertical-align: top
+      margin: 10px 0 0 0 
+      padding: 0px
+      div
+        margin: 0px
+        padding: 0px
+        display: inline-block
+        vertical-align: top
+        div.before, div.after
+          height: 18px
+          padding: 8px   
+          margin: 0px
+          display: inline-block
+        div.before
+          display: none
+          width: 8px
+          min-width: 0px
+          padding: 8px 0 8px 0
+          border-top-left-radius: 3px
+          border-bottom-left-radius: 3px
+          border-top-right-radius: 0px
+          border-bottom-right-radius: 0px
+          background-image: none
+        div.after
+          padding: 8px
+          width: 220px
+          border-radius: 3px      
+          display: inline-block
+          span
+            font-size: 14px
+            font-weight: bold
+            color: black
+            margin: 0 auto
+        &:hover
+          cursor: pointer
+          .before
+            display: inline-block  
+          .after
+            width: 212px  
+            border-top-left-radius: 0px
+            border-bottom-left-radius: 0px
+      a
+        display: inline-block
+        vertical-align: top
+        margin: 0 0 0 3px
+        width: 18px
+        height: 18px
+        padding: 8px
+        border-radius: 3px
+        color: grey
+        &:hover
+          background: #D6DADC
+          color: black
+        &:before
+          color: grey
+          content: "\1F589"
+          position: relative
+          right: 0px
+          bottom: 5px
+          
+//Date EDIT    <dt><label for="date">Date</label></dt>
+dl.date_time
+  margin-bottom: 10px
+  dt
+    margin: 10px 0 0 0
+  label
+    color: #6f777b
+    font-size: 20px
+  input
+    border-radius: 3px
+    padding: 5px
+    &:-webkit-outer-spin-button, -webkit-inner-spin-button
+      -webkit-appearance: none
+      appearance: none
+      margin: 0
+
+//LABEL SELECT-----------------------------------------------
+a.boring_link
+  display: block
+  text-decoration: underline
+  padding: 10px 0 10px 5px
+  color: #8c8c8c
+  &:hover
+    background: #CDD2D4
+    color: #4d4d4d
+
+//LABEL EDIT POPOUT--------------------------------------------
+li a.color_edit
+  width: 34px
+  height: 30px
+  padding: 3px 6px
+  margin: 0 10px 10px 0
+  border-radius: 3px
+  float: left
+li a.selected_color
+   &:before
+    content: "\2714"
+    position: relative
+    left: 5px
+    top: 5px
+    font-size: 20px
+    font-weight: bold
+    color: #ffffff
+    
+//BACKGROUND EDIT---------------------------------------------
+#background_select_list
+  ul
+    margin: 20px 0 0 15px
+  li a.bg_sample
+    width: 80px
+    height: 60px
+    padding: 0
+    margin: 0 6px 12px 6px
+    border-radius: 3px
+    float: left
+      

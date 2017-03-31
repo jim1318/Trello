@@ -1,0 +1,106 @@
+include /_mixins
+
+doctype html
+html
+  head
+    title= "Jim's Trello App"
+    //- Load CSS Files
+    +stylesheet_link_tag('style')
+    //-Vendor JS Files (combined into one)
+    +javascript_include_tag('vendor/all')
+    //-Handelbars Templates
+    +javascript_include_tag('handlebars_templates')  
+
+  body
+    header.dark_blue_bg
+      #search FUTURE SEARCH
+      h1 Jim's Trello App
+    main.dark_blue_bg
+    #modal
+
+    block content
+
+
+    //-Backbone Javascript Files
+    +javascript_include_tag(
+      'application'
+    )
+
+    //-Models
+    +javascript_include_tag(
+      'models/board_model',
+      'models/list_model',
+      'models/card_model',
+      'models/comment_model',
+      'models/action_model',
+      'models/template_label_model'
+    )
+
+    //-Collections
+    +javascript_include_tag(
+      'collections/lists',
+      'collections/cards',
+      'collections/comments',
+      'collections/actions',
+      'collections/template_labels'
+    )
+    
+    //-Board View
+    +javascript_include_tag(
+      'views/board/board_view',
+      'views/board/list_view'
+    )
+    
+    //-Card Views
+    +javascript_include_tag(
+      'views/cards/card_summary_view',
+      'views/cards/card_detail_view'
+    )
+
+    //-Labels Views
+    +javascript_include_tag(
+      'views/labels/labels_summary_view',
+      'views/labels/labels_detail_view',
+      'views/labels/template_view',
+      'views/labels/detail_view',
+      'views/labels/summary_view',
+      'views/labels/select_view'
+    )
+
+    //-Menu Views-----------------------------
+    +javascript_include_tag(
+      'views/menu/menu_activity_view',
+      'views/menu/menu_background_view'
+    )
+
+    //-PopOut Views---------------------------
+    +javascript_include_tag(
+      'views/popup/date_edit_view',
+      'views/popup/labels_selector_view',
+      'views/popup/move_card_view',
+      'views/popup/copy_card_view',
+      'views/popup/list_edit_view',
+      'views/popup/board_name_edit_view',
+      'views/popup/label_edit_view',
+      'views/popup/label_add_view'
+    )
+
+    //-Shared Views-------------------------------
+    +javascript_include_tag(
+      'views/shared/comment_view',
+      'views/shared/action_view'
+    )
+
+
+    //-The period here is jade syntax
+    //-Populate App.data variable with data pulled from server on index route    
+    script(type="text/javascript").                     
+      App.boardData =           !{JSON.stringify(boardData)}
+      App.listsData =           !{JSON.stringify(listsData)}
+      App.cardsData =           !{JSON.stringify(cardsData)}
+      App.commentsData =        !{JSON.stringify(commentsData)}
+      App.actionsData =         !{JSON.stringify(actionsData)}
+      App.templateLabelsData =  !{JSON.stringify(templateLabelsData)}
+      App.initialize()
+
+    block scripts
